@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hubot Sans";
+  font-style: normal;
+  src: url("/fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+    url("/fonts/Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Hubot Sans";
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .grid-rows {
+    grid-template-rows: 3rem 1fr 5rem 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .grid-rows {
+    grid-template-rows: 6rem 1fr 6rem;
+  }
+}
+
+.text-fat {
+  font-weight: 900;
+  font-stretch: 125%;
+}
+
+.text-thin {
+  font-weight: 400;
+  font-stretch: 125%;
+}
+
+.text-mid {
+  font-weight: 600;
+  font-stretch: 125%;
+}
