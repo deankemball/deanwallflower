@@ -1,1 +1,1 @@
-a blog about food in leipzig
+artist portfolio for deanwallflower
