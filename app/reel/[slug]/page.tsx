@@ -8,7 +8,11 @@ import React, { useEffect } from "react";
 const Reel = () => {
   const pathname = usePathname();
   const { reelIndex, setReelIndex, muted } = useReelContext();
-
+  console.log(
+    `https://res.cloudinary.com/${
+      process.env.NEXT_PUBLIC_CLOUDINARY_NAME
+    }/video/upload/reel/q_auto,vc_auto/${Object.values(slugs)[reelIndex].link}`
+  );
   useEffect(() => {
     pathname &&
       setReelIndex(Object.keys(slugs).indexOf(pathname.split("reel/")[1]));

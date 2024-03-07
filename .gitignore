@@ -1,10 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/nextjs,macos,node,windows,yarn
 # Edit at https://www.toptal.com/developers/gitignore?templates=nextjs,macos,node,windows,yarn
 
-/public/projects
-/public
-/projects
-
 ### macOS ###
 # General
 .DS_Store

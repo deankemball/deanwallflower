@@ -50,7 +50,7 @@ const Project = ({}: ProjectProps) => {
               className="h-[320px] md:h-[400px] col-span-3 flex flex-col border-2 border-dashed border-white p-4 bg-black/50 hover:bg-accent/20 cursor-pointer relative"
             >
               <div className="flex w-full gap-4 items-baseline justify-between">
-                <h2 className="select-none text-fat tracking-wide text-sm md:text-lg lg:text-2xl">
+                <h2 className="select-none text-fat tracking-wide text-2xl italic">
                   {project.title}
                 </h2>
                 <p>{project.year}</p>
@@ -64,8 +64,9 @@ const Project = ({}: ProjectProps) => {
               <video
                 className="aspect-video object-contain object-bottom w-full max-w-[460px] mx-auto z-10"
                 autoPlay={true}
-                muted
-                loop
+                loop={true}
+                muted={true}
+                playsInline={true}
                 src={project.video}
               />
             </Link>

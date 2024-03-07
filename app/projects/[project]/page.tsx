@@ -53,7 +53,7 @@ const Project = ({}: ProjectProps) => {
     >
       <Link
         href="/projects"
-        className="absolute right-0 top-0 border-l-2 border-b-2 border-white border-dashed w-[50px] aspect-square flex items-center justify-center hover:bg-accent/25 cursor-pointer text-2xl pt-0.5 pr-0.5"
+        className="absolute z-50 right-0 top-0 border-l-2 border-b-2 border-white border-dashed w-[50px] aspect-square flex items-center justify-center hover:bg-accent/25 cursor-pointer text-2xl pt-0.5 pr-0.5"
       >
         <CloseIcon />
       </Link>
@@ -106,7 +106,7 @@ const Project = ({}: ProjectProps) => {
                 <video
                   key={`${project.title}-video-${index}`}
                   className="h-fit col-span-full w-full mx-auto mt-4"
-                  autoPlay={false}
+                  autoPlay={index === 0}
                   loop
                   controls
                   src={photo}
