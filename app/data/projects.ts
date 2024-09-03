@@ -43,6 +43,7 @@ export const projects: ProjectsType[] = [
     video: `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_NAME}/video/upload/projects/cinemasher/cinemasher-thumb_pnjgnf.mp4`,
     slug: "cinemasher",
     photos: [
+      `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_NAME}/video/upload/projects/cinemasher/cinematheque-demo_ul7cq7.mov`,
       `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_NAME}/video/upload/projects/cinemasher/cinemasher-thumb_pnjgnf.mp4`,
       `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_NAME}/video/upload/projects/cinemasher/cinemasher-1_1_yc0vgz.mp4`,
     ],

@@ -102,7 +102,7 @@ const Project = ({}: ProjectProps) => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {project.photos?.map((photo, index) => {
-              return photo.includes(".mp4") ? (
+              return photo.includes(".mp4") || photo.includes('.mov') ? (
                 <video
                   key={`${project.title}-video-${index}`}
                   className="h-fit col-span-full w-full mx-auto mt-4"
